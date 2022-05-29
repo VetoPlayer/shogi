@@ -1,0 +1,25 @@
+\documentclass{bxjsarticle}
+\usepackage{zxjatype}
+\usepackage[ipa]{zxjafont}
+
+\usepackage{xcolor}
+\usepackage{logicpuzzle}
+\renewcommand\familydefault{\sfdefault}
+\newcommand{\z}[0]{%
+  \rotatebox{180}%
+}
+\let\shogiH\shipH
+\let\shogiV\sumV
+\begin{document}
+\begin{logicpuzzle}[rows=9,columns=9,color=yellow,fontsize=huge]
+\shogiH{9,8,7,6,5,4,3,2,1}
+\shogiV{9,8,7,6,5,4,3,2,1}
+\setrow{9}{\z{香},\z{桂},\z{銀},\z{金},\z{王},\z{金},\z{銀},\z{桂},\z{香}}
+    \setrow{8}{{},\z{飛},{},{},{},{},{},\z{角},{}}
+\setrow{7}{\z{歩},\z{歩},\z{歩},\z{歩},\z{歩},\z{歩},\z{歩},\z{歩},\z{歩}}
+\setrow{3}{歩,歩,歩,歩,歩,歩,歩,歩,歩}
+\setrow{2}{{},角,{},{},{},{},{},飛,{}}
+\setrow{1}{香,桂,銀,金,玉,金,銀, 桂,香}
+\framepuzzle
+\end{logicpuzzle}
+\end{document}
